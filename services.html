@@ -1,0 +1,462 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .nav {
+      background: #fff2f2;
+      height: 110px;
+    }
+
+    .nav-logo img {
+      height: 100px;
+      width: 200px;
+      margin-left: 239px;
+      margin-top: 10px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      margin-left: 543px;
+      margin-top: -72px;
+
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: rgba(211, 96, 96, 0.647);
+      text-align: center;
+      padding: 14px 35px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: sky blue;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .big-heading {
+      color: #fff;
+      text-align: center;
+      font-size: 26pt;
+      padding: 20px;
+      text-transform: capitalize;
+    }
+
+    .table {
+      background: #fff;
+      width: 27%;
+      height: auto;
+      display: block;
+      float: left;
+      position: relative;
+      left: 6%;
+      margin: 20px;
+      border-radius: 8px;
+
+      box-shadow: 1px 8px 5px rgba(0, 0, 0, .2);
+    }
+
+    .heading {
+      background-color: rgba(211, 96, 96, 0.647);
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      font-size: 15pt;
+      color: #272625;
+      margin-bottom: 40px;
+      text-transform: capitalize;
+    }
+    .block p a{
+
+    }
+    .block {
+
+      display: block;
+      width: 78%;
+      margin-left: 40px;
+      border-bottom: 1px dashed rgba(0, 0, 0, .2);
+
+      .price {
+        float: right;
+        position: relative;
+        right: 30px;
+
+        sub {
+          position: absolute;
+          right: -35px;
+          top: 5px;
+          font-weight: lighter;
+          font-size: 9pt;
+        }
+      }
+
+      .btn {
+        display: block;
+        margin: 20px auto 30px;
+        width: 60%;
+        height: 50px;
+        background-color: rosybrown;
+        position: relative;
+        border: none;
+        border-radius: 50px;
+        transition: all .2s linear;
+        overflow: hidden;
+
+        p {
+          font-weight: bolder;
+          color: #fff;
+          font-size: 15px;
+          text-align: center;
+          font-family: 'Poppins', sans-serif;
+          text-transform: uppercase;
+
+
+        }
+
+        span {
+          font-size: 20px;
+          position: relative;
+          top: -35px;
+          left: -100%;
+          color: #fff;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          span {
+            left: 0%;
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+          }
+
+        }
+      }
+    }
+
+    .btn:hover {
+      background-color: #000;
+    }
+
+    p {
+      text-align: left;
+      color: #272625;
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+    }
+
+    .text {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+      color: rgb(14, 14, 14);
+      text-align: center;
+      padding-top: 20px;
+      text-decoration: underline;
+    }
+
+
+
+    .price {
+      margin-bottom: 40px;
+      position: absolute;
+    }
+
+    .price1 {
+      position: sticky;
+    }
+
+    .price2 {
+      position: sticky;
+    }
+
+    .price3 {
+      position: sticky;
+    }
+
+    .footer1 {
+      background-color: black;
+      font-size: 20px;
+      color: white;
+      height: 40px;
+      word-spacing: 80px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .footer2 img {
+      background-color: black;
+      height: 40px;
+      width: 40px;
+
+      margin-left: 55px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      transition: transform .2s;
+
+    }
+
+    .footer2 img:hover {
+      transform: scale(1.2);
+    }
+
+    .footer_1 {
+      display: flex;
+      margin-left: 550px;
+    }
+
+    .f-last {
+      background-color: black;
+    }
+
+    .design {
+      background-color: black;
+      color: white;
+      height: 20px;
+
+      margin-left: 1256px;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body style="background-color:white;">
+  <div class="nav">
+
+    <div class="nav-logo"><img src="logo.png"></div>
+
+    <div class="navbar">
+      <a href="index.html"><b>Home</b></a>
+      <a href="services.html"><b>Services</b></a>
+
+      <a href="aboutus.html"><b>About us</b></a>
+      <a href="contactus.html"><b>Contact us</b></a>
+      <a href="appoint.html"><b>MAKE APPOINTMENT</b></b></a>
+
+
+
+    </div>
+  </div>
+
+  <div class="price">
+    <div class="text">Choice of service</div>
+    <div class="price1">
+      <div class="table">
+        <h2 class="heading">
+          HAIR SERVICES
+        </h2>
+        <div class="block">
+          <p>CUT & STYLE
+            <span class="price">$35
+              <sub>30min</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+          </button>
+        </div>
+
+        <div class="block">
+          <p>SHAMPOO & STYLING
+            <span class="price">$29
+              <sub>30min</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+          </button>
+        </div>
+
+
+        <div class="block">
+          <p>UPDO HAIRSTYLE
+            <span class="price">$75
+              <sub>30min</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+        </div>
+
+        </button>
+      </div>
+    </div>
+    <div class="price2">
+      <div class="table">
+        <h2 class="heading">
+          HAIR SERVICES
+        </h2>
+        <div class="block">
+          <p>COLOR ALL OVER
+            <span class="price">$80
+              <sub>hour</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+          </button>
+        </div>
+
+
+        <div class="block">
+          <p>COLOR WITH HIGHLIGHTS
+            <span class="price">$115
+              <sub>hour</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+          </button>
+        </div>
+
+        <div class="block">
+          <p>ROOT TOUCH
+            <span class="price">$65
+
+              <sub>30min</sub>
+            </span>
+          </p>
+          <button class="btn">
+            <p><a href="contactus.html">SELECT</a></p>
+
+          </button>
+        </div>
+
+
+
+      </div>
+      <div class="price3">
+        <div class="table">
+          <h2 class="heading">
+            HAIR SERVICES
+          </h2>
+          <div class="block">
+            <p>PERM
+              <span class="price">$75
+                <sub>hour</sub>
+              </span>
+            </p>
+            <button class="btn">
+              <p><a href="contactus.html">SELECT</a></p>
+
+            </button>
+
+          </div>
+
+          <div class="block">
+            <p>KERATIN
+              <span class="price">$115
+                <sub>hour</sub>
+              </span>
+            </p>
+            <button class="btn">
+              <p><a href="contactus.html">SELECT</a></p>
+
+            </button>
+          </div>
+
+          <div class="block">
+            <p>SMOOTHENING
+              <span class="price">$140
+                <sub>hour</sub>
+              </span>
+            </p>
+            <button class="btn">
+              <p><a href="contactus.html">SELECT</a></p>
+
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <div class="f-last">
+
+      <div class="footer1">
+        <footer><a href="index.html">HOME</a> <a href="services.html">SERVICES</a> <a href="aboutus.html">ABOUT-US</a> <a
+            href="contactus.html">CONTACT-US</a> <a href="appoint.html">MAKE_APPOINTMENT</a></footer>
+      </div><br><br>
+      <div class="footer_1">
+        <div class="footer2"><img src="facebook.jpg"></div>
+        <div class="footer2"><img src="instagram.jpg"></div>
+        <div class="footer2"><img src="Email.jpg"></div>
+        <div class="footer2"><img src="phone.png"></div>
+      </div>
+      <div class="design">Designed by: Sakshi Ahir</div>
+    </div>
+</body>
+
+</html>
